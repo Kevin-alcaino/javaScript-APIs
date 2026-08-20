@@ -11,7 +11,7 @@ async function getMonedas() {
     const data = await res.json();
 
     // Se rellena el select con las claves del archivo JSON
-    for (let moneda of data ){
+    for (const clave in data ){
         const item = data[clave];
 
        
