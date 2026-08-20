@@ -13,14 +13,22 @@
     <div class="contenedor">
     <div class="pesos">
     <h2>Pesos CLP</h2>
-    <input type="text" value="Ingrese monto."
+    <input id="monto" type="text" value="Ingrese monto.">
     </div>
-    <div class="convertidor">
+    <div id="convertidor">
     <h2>Moneda a convertir</h2>
     <select id="select-moneda">
         <option value="">Selecione moneda</option>
     </select>
     </div>
+    <div class="boton" >
+        <button id="boton">Convertir</button>
+    </div>
+    <div id="resultado"></div>
+    </div>
+
+    <div class="contenedor-grafico">
+        <canvas id="grafico"></canvas>
     </div>
     
 </body>
