@@ -30,5 +30,9 @@ async function getMonedas() {
     console.error(error);
 } 
 }
+<<<<<<< HEAD
 getMonedas();
 
+=======
+    
+>>>>>>> cc150aca9405903970bc9d6f7e368fc5362785e6
