@@ -32,4 +32,3 @@ async function getMonedas() {
 }
 getMonedas();
 
-// 3. 
