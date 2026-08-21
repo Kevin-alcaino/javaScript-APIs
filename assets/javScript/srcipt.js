@@ -32,3 +32,31 @@ async function getMonedas() {
 }
 getMonedas()
 
+// 3. Capturamos el evento click del boton
+boton.addEventListener("click",()=>{
+    const montoClp = Number(inputMonto.value);
+
+    if (!montoClp || isNaN(montoClp) || montoClp <= 0) {
+        resultado.textContent = "Por favor, ingresa un monto válido.";
+        return;
+    } 
+
+    const opcionSeleccionada = selectMoneda.selectedOptions[0];
+    if (!opcionSeleccionada || !opcionSeleccionada.dataset.valor) {
+        resultado.textContent = "Por favor, selecciona una moneda.";
+        return;
+    }
+
+    const valorMoneda = Number(opcionSeleccionada.dataset.valor);
+    const nombreMoneda = opcionSeleccionada.textContent;
+
+    // Calculo
+    const total = montoClp / valorMoneda;
+    console.log("total:", total);
+
+    // Resultado 
+    resultado.textContent = `Resultado: $${total.toFixed(2)} ${nombreMoneda}`;
+
+
+
+});
