@@ -1,14 +1,36 @@
+*{
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "ELSH" 0;
+
+}
 .contenedor{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-    padding: 15px 0 0 0;
-    height: 350px;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 15px 15px;
     width: 350px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: rgb(129, 119, 86);
+  
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    color:  rgb(129, 119, 86);
+    background-color: aliceblue;
+    border-radius: 15px;
+    
 }
 
 body{
@@ -17,13 +39,33 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(78, 133, 110);
+    background-image: url(https://img.magnific.com/vector-gratis/fondo-signo-dolar_23-2150979310.jpg?semt=ais_test_b&w=740&q=80);
 }
 
 input, select, button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     width: 200px;
+    border-radius: 15px;
 }
 
 button{
+   
     background-color: rgb(78, 133, 110);
     
+}
+
+#convertidor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pesos{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
