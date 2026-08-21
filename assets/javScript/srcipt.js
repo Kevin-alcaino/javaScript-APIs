@@ -15,24 +15,20 @@ async function getMonedas() {
         const item = data[clave];
 
        
-            if (item && typeof item === "object" && item.codigo && item.valor) {
+           if (item && typeof item === "object" && "codigo" in item && "valor" in item) {
                 const option = document.createElement("option");
                 option.value = item.codigo;
-                option.textContent = item.nombre;
+                option.textContent = item.nombre || item.codigo;
 
                 // Se guarda el valor númerico en el atributo "dataset"
                 option.dataset.valor = item.valor;
                 selectMoneda.appendChild(option);
             }
-    }
-}  catch (error){
-    resultado.textContent = "Error al cargar monedas.";
-    console.error(error);
-} 
+        }
+    } catch (error) {
+        resultado.textContent = "Error al cargar monedas.";
+        console.error(error);
+    } 
 }
-<<<<<<< HEAD
-getMonedas();
+getMonedas()
 
-=======
-    
->>>>>>> cc150aca9405903970bc9d6f7e368fc5362785e6
