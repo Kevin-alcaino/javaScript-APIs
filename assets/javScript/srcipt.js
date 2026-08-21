@@ -56,7 +56,7 @@ boton.addEventListener("click",()=>{
 
     // Resultado 
     resultado.textContent = `Resultado: $${total.toFixed(2)} ${nombreMoneda}`;
-
-
-
 });
+
+
+
